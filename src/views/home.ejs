@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("./partials/head")%>
+
+<body>
+    <%- include("./partials/header")%>    
+    
+    <main>
+        <div class="home-message"> Que onda esta pagina</div>        
+
+        <section class="section-box">
+            <h2>Últimos agregados</h2>            
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <img class="img-carousel" src="./img/img-slideshow-1.JPG" style="width:100%">
+                  <h3 class="title-slideshow">Destino/experiencia</h3>
+                </div>
+            
+                <div class="mySlides fade">
+                  <img class="img-carousel" src="./img/img-default.png" style="width:100%">
+                  <h3 class="title-slideshow">Destino/experiencia</h3>
+                </div>
+            
+                <div class="mySlides fade">
+                  <img class="img-carousel" src="./img/img-slideshow-2.JPG" style="width:100%">
+                  <h3 class="title-slideshow">Destino/experiencia</h3>
+                </div>
+            
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+              </div>
+              <br>            
+        </section>
+
+
+        <section class="section-box">
+            <h2>Destacado del mes</h2>
+            <div class= "img-box"><img src="../img/img-default.png"></div>
+            <h3>Destino/experiencia</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi illo voluptas, aperiam excepturi, facere quibusdam impedit dicta quis itaque sint illum. Culpa dolore, quis magnam magni quae cumque sit libero.</p>
+
+        </section>
+    </main>
+
+    <%- include("./partials/footer")%>    
+
+    <script src="/js/slideShow.js"></script>
+</body>
+</html>

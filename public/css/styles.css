@@ -1,0 +1,260 @@
+/**** General ****/
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;    
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Header */
+header{
+    background-color: #6AB187;
+    padding:5px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+}
+
+.top-menu{
+    color:#eeeeee;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 30%;
+    text-align: center;
+}
+.mobile{
+    width: 90%
+}
+
+.search-bar{
+    width: 50%
+}
+
+.searcher{
+    border-color:#eeeeee;
+    border-radius: 7px;
+    font-size: 12px;
+    padding: 2px;
+    width:100%
+}
+
+.icon-menu{
+    width: 10%;
+    text-align: center;
+}
+.icon-menu i{    
+    font-size: 20px;
+}
+
+/* Footer */
+.footer{
+    background-color: #B7B8B6;
+    position: fixed;
+    bottom: 0px;
+    width:100%
+}
+.footer-mobile{
+    background-color: white;
+    border-top: 1px solid #90AFC5;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    justify-content:space-around;
+    padding: 7px
+}
+
+.footer-mobile i{
+    font-size: 25px;
+    padding: 5px;
+    color: #90AFC5
+}
+
+/* Botones */
+.control-button{
+  margin: 15px auto;
+  text-align: center;
+}
+.button{
+  padding:10px 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #B7B8B6;
+  border: 1px solid #20948B;
+  border-radius: 15px;
+  background-color: #20948B;
+  width: 35%
+}
+
+.cancel-button{
+  padding:10px 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #B7B8B6;
+  border: 1px solid #f30d05;
+  border-radius: 15px;
+  background-color: #f30d05;
+  width: 35%
+}
+
+/**** Home ****/
+/* Main */
+main{
+  width: 95%;
+  margin: 110px auto 70px
+}
+
+.home-message{
+  padding:10%;
+  text-align: center;
+}
+
+.section-box{
+  border: 1px solid #B7B8B6;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgb(172, 171, 171);
+  margin: 20px 10px    
+}
+
+.section-box h2,h3,p{
+  padding:10px
+}
+
+.img-box{
+  border: 1px solid #B7B8B6
+}
+
+.img-box img{
+  width:100%
+}
+
+/* Slideshow- Carousel */
+.mySlides {display: none}
+.img-carousel {vertical-align: middle;}
+.title-slideshow{text-align: center}
+
+/* Slideshow container */
+.slideshow-container {
+max-width: 1200px;
+position: relative;
+margin: 15px auto 5px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -22px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* Fading animation */
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+.prev, .next,.text {font-size: 11px}
+}
+
+
+/**** Create-form ****/
+.main-forms{
+  margin: 140px auto 70px;
+  width:100%;
+}
+
+.create-form{
+  width:80%;
+  padding:10px;
+  margin: 10px auto;
+  border: 1px solid #90AFC5
+}
+
+.control-form{
+  margin: 5px 0px 5px
+
+}
+
+.label-general{
+  display:block;
+  font-weight: bold;  
+}
+
+.input-form{
+  width: 90%;
+  padding: 2px
+}
+
+.input-form-xl{
+  width: 90%;
+  height: 60px;
+  resize: none;
+}
+
+.label-select{
+  margin: 0px 8px;
+  width: 30%
+}
+.checkbox-input{
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 415px) {}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("../partials/head")%>
+
+<body>
+    <%- include("../partials/header")%>
+
+    <main class="main-forms">
+        <form class="create-form">
+            <div class="control-form">
+                <label class="label-general">Nombre del trekking-experiencia</label>
+                <input class="input-form" type="text" name="name" placeholder="¿Dónde fuiste?">
+            </div>
+
+            <div class="control-form">
+                <label class="label-general">Provincia</label>
+                <select class="input-form" type="text" name="province"></select>
+            </div>
+
+            <div class="control-form">
+                <label class="label-general">Duración</label>
+                <input class="input-form" type="text" name="duration" placeholder="¿Cuánto te llevó?">
+            </div>
+           
+            <div class="control-form">
+                <label class="label-general">Distancia</label>
+                <input class="input-form" type="text" name="distance" placeholder="Kms...">
+            </div>
+
+            <div class="control-form">
+                <label class="label-general">Dificultad</label>
+                <div class="checkbox-input"> 
+                    <label class="label-select">Baja</label>
+                    <input type="checkbox" name="difficulty" value="Baja">
+                </div>
+                <div class="checkbox-input"> 
+                    <label class="label-select">Media</label>
+                    <input type="checkbox" name="difficulty" value="Media">
+                </div>
+                <div class="checkbox-input"> 
+                    <label class="label-select">Alta</label>
+                    <input type="checkbox" name="difficulty" value="Alta">
+                </div>
+                <div class="checkbox-input"> 
+                    <label class="label-select">Profesional</label>
+                    <input type="checkbox" name="difficulty" value="Profesional">
+                </div>                
+            </div>
+
+            <div class="control-form">
+                <label class="label-general">Descripción</label>
+                <textarea class="input-form-xl" name="description" placeholder="Describe tu experiencia..."></textarea>
+            </div>
+
+            <div class="control-form">
+                <label class="label-general">Tips</label>                 
+                <textarea class="input-form-xl" name="tips" placeholder="Tus recomendaciones..."></textarea>            
+            </div>
+
+            <div class="control-form">
+                <label class="label-general">Foto principal</label>
+                <input type="file" name="main-pic">
+            </div>
+
+            <div class="control-form">
+                <label class="label-general">Más fotos</label>
+                <input type="file" name="pics">
+            </div>
+
+            <div class="control-button"><button type="submit" class="button">Crear</button></div>
+            
+        </form>
+
+
+    </main>
+
+    <%- include("../partials/footer")%> 
+    
+</body>
+</html>

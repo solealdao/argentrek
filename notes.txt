@@ -1,0 +1,15 @@
+Paleta colores:
+
+Azul mist: #90AFC5
+Azul stone (claro): #336B87
+Shadow (gris oscuro): #2A3132
+Ocean (verde agua): #07575B
+Gris: #B7B8B6
+
+
+Paleta:
+Sand: #F4CC70
+Burnt orange: #DE7A22
+Sea: #20948B
+Lagoon: #6AB187
+Rojo: #f30d05
