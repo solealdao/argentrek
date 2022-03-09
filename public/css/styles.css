@@ -43,21 +43,57 @@ header{
     width:100%
 }
 
-.icon-menu{
-    width: 10%;
-    text-align: center;
+.icon-menu{    
+    text-align: center;    
 }
 .icon-menu i{    
-    font-size: 20px;
+    font-size: 30px;
+}
+
+.dropdown{
+  display:inline-block;
+  position:relative;
+  width: 10%
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #B7B8B6;
+  position: absolute;
+  left: -50px;
+  width: 210%;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  color: #FFFFFF;
+  background-color: #20948B;
 }
 
 /* Footer */
-.footer{
+.footer-mobile-tablet-container{
     background-color: #B7B8B6;
     position: fixed;
     bottom: 0px;
     width:100%
 }
+
+.footer-laptop-desktop-container{
+  display:none
+}
+
 .footer-mobile{
     background-color: white;
     border-top: 1px solid #90AFC5;
@@ -329,4 +365,25 @@ to {opacity: 1}
 /* Gallery */
 
 
-@media screen and (min-width: 415px) {}
+/**** Version Tablet ****/
+@media screen and (min-width: 481px) {
+  
+  
+}
+
+/**** Version Laptop ****/
+@media screen and (min-width: 769px) {
+  
+  .footer-mobile-tablet-container{
+    display:none
+  }
+
+  .footer-laptop-dektop-container{
+    display:block
+  }
+}
+
+/**** Version Desktop ****/
+@media screen and (min-width: 1025px) {
+  
+}
